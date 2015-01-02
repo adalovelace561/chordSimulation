@@ -69,9 +69,9 @@ public class Network {
 			net.insertNode(net.nodes.get(testNodeID[1]), testNodeID[i]);
 			System.err.println("inserting: "+i);
 		}
-		Iterator it = net.nodes.values().iterator();
+		Iterator<Node> it = net.nodes.values().iterator();
 		while(it.hasNext()){
-			Node next = (Node) it.next();
+			Node next = it.next();
 			System.err.println(next);
 		}
 	}
